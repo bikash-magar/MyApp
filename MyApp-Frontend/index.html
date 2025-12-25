@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="greeting">Hello world</h1>  <!-- Added id for JS targeting -->
+    <h1 id="greeting">Hello world</h1>  <!-- Initial text; JS will change this -->
 
     <script>
         // Fetch data from backend API
-        fetch('https://myapp-n8rq.onrender.com/api/name')  // Replace with Render URL after deployment
+        fetch('https://myapp-n8rq.onrender.com/api/name')  // Your Render URL
             .then(response => response.json())
             .then(data => {
                 document.getElementById('greeting').innerText = `Hello world, my name is ${data.name}`;
