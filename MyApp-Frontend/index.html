@@ -10,7 +10,7 @@
 
     <script>
         // Fetch data from backend API
-        fetch('http://127.0.0.1:5000/api/name')  // Replace with Render URL after deployment
+        fetch('https://myapp-n8rq.onrender.com/api/name')  // Replace with Render URL after deployment
             .then(response => response.json())
             .then(data => {
                 document.getElementById('greeting').innerText = `Hello world, my name is ${data.name}`;
