@@ -1,10 +1,12 @@
 from flask import Flask, jsonify
+import os  # Add this import
 
 app = Flask(__name__)
 
 @app.route('/api/name')
 def get_name():
-    return jsonify({'name': 'Bikash Magar'})  # Replace with dynamic data if needed
+    return jsonify({'name': 'Bikash Magar'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Use Render's PORT or default to 5000
+    app.run(host='0.0.0.0', port=port, debug=False)  # Disable debug for production
