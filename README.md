@@ -18,5 +18,5 @@
 ## PostgreSQL
 * SUPABASE
  [
-    * 
+    * Postgresql
  ]
