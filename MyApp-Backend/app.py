@@ -7,7 +7,7 @@ CORS(app)  # Enable CORS for all routes
 
 @app.route('/api/name')
 def get_name():
-    return jsonify({'name': 'Bikash Magar'})
+    return jsonify({'name': 'Bikash Burja Magar'})
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Use Render's PORT or default to 5000
